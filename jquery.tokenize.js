@@ -179,7 +179,12 @@
             this.searchInput.on('paste', function(){
                 setTimeout(function(){ $this.resizeSearchInput(); }, 10);
                 setTimeout(function(){
-                    var paste_elements = $this.searchInput.val().split(',');
+                    var paste_elements = [];
+                    if(Array.isArray($this.options.delimiter)){
+                        paste_elements = $this.searchInput.val().split(new RegExp($this.options.delimiter.join('|'), 'g'));
+                    } else {
+                        paste_elements = $this.searchInput.val().split($this.options.delimiter);
+                    }
                     if(paste_elements.length > 1){
                         $.each(paste_elements, function(_, value){
                             $this.tokenAdd(value.trim(), '');
