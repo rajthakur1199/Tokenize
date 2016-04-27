@@ -535,7 +535,10 @@
             } else {
 
                 this.debounce(function(){
-                    $.ajax({
+                    if(this.ajax()){
+                        this.ajax.abort();
+                    }
+                    this.ajax = $.ajax({
                         url: $this.options.datas,
                         data: $this.options.searchParam + "=" + encodeURIComponent($this.searchInput.val()),
                         dataType: $this.options.dataType,
