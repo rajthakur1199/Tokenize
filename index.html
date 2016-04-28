@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tokenize by zellerda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Tokenize</h1>
+      <h2 class="project-tagline">jQuery Tokenize is a plugin which allows your users to select multiple items from a predefined list or ajax, using autocompletion as they type to find each item. You may have seen a similar type of text entry when filling in the recipients field sending messages on facebook or tags on tumblr.</h2>
+      <a href="https://github.com/zellerda/Tokenize" class="btn">View on GitHub</a>
+      <a href="https://github.com/zellerda/Tokenize/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/zellerda/Tokenize/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p>I'm currently developping a new version of tokenize, it can be found here <a href="https://github.com/zellerda/Tokenize2">https://github.com/zellerda/Tokenize2</a></p>
+
+<h1>
+<a id="tokenize" class="anchor" href="#tokenize" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tokenize</h1>
+
+<p>jQuery Tokenize is a plugin which allows your users to select multiple items from a predefined list or ajax, using autocompletion as they type to find each item. You may have seen a similar type of text entry when filling in the recipients field sending messages on facebook or tags on tumblr.</p>
+
+<ul>
+<li>Intuitive UI for selecting multiple items from a large list</li>
+<li>Easy to skin / style purely in css, no images required</li>
+<li>Supports any backend which can generate JSON, including PHP, Rails, Django, ASP.net</li>
+<li>Callbacks when items are added or removed from the list</li>
+<li>Select, delete and navigate items using the mouse or keyboard</li>
+<li>Sortable items</li>
+<li>Support jQuery 1.11+ and jQuery 2+</li>
+</ul>
+
+<p>Documentation and Demo : <a href="https://www.zellerda.com/projects/jquery/tokenize">https://www.zellerda.com/projects/jquery/tokenize</a></p>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Changelog</h2>
+
+<p>jQuery Tokenize 2.6</p>
+
+<ul>
+<li>[Issue #69] Add onDropdownShow event</li>
+<li>[Issue #80] Fix jQuery 2.1.4 ajax issue when using hash in search input</li>
+<li>[Issue #81] Add onDuplicateToken option</li>
+<li>[Issue #82] Adding trim on adding tokens</li>
+<li>[Issue #84] Adding the possibility to set multiples delimiters</li>
+</ul>
+
+<p>jQuery Tokenize 2.5.2 - 24 October 2015</p>
+
+<ul>
+<li>[Issue #57] Add bower package definition</li>
+<li>[Issue #64] Add ajax error handler in option</li>
+<li>[Issue #66] Add searchMinLength parameter</li>
+<li>Fix potential XSS issue on adding tokens</li>
+</ul>
+
+<p>jQuery Tokenize 2.5.1 - 11 August 2015</p>
+
+<ul>
+<li>[Issue #59] Fix sortable call when sortable option is false</li>
+</ul>
+
+<p>jQuery Tokenize 2.5 - 11 August 2015</p>
+
+<ul>
+<li>[Issue #53][Issue #54] Fix Firefox behavior with selected attribute</li>
+<li>Fix re-ordering of element when deleted</li>
+<li>Fix some return values toArray() method</li>
+<li>Change some return types for api method</li>
+<li>Add new api access (more easy)</li>
+</ul>
+
+<p>jQuery Tokenize 2.4.3 - 22 July 2015</p>
+
+<ul>
+<li>Fix remap function</li>
+</ul>
+
+<p>jQuery Tokenize 2.4.2 - 22 July 2015</p>
+
+<ul>
+<li>[Issue #37] Add Focused class on Tokenize:focus</li>
+<li>[Issue #43] Fix delimiter for non-english keyboard layouts</li>
+<li>[Issue #44] Remove disabled element from search</li>
+<li>[Issue #48] Add resize option for TokensContainer block</li>
+<li>[Issue #52] Add remap function</li>
+<li>[Issue #53] Small changes in attribute set</li>
+<li>Remove selection on TokensContainer</li>
+<li>Add delimiter option</li>
+<li>Return the object for each api method</li>
+<li>Fix initialization of tokenize when calling twice</li>
+<li>Fix missing bottom padding</li>
+</ul>
+
+<p>jQuery Tokenize 2.4.1 - 1 June 2015</p>
+
+<ul>
+<li>[Issue #36] Fix jquery exception when enter doubles quotes</li>
+<li>[Issue #35] Fix debounce function</li>
+</ul>
+
+<p>jQuery Tokenize 2.4 - 18 May 2015</p>
+
+<ul>
+<li>Add sortable option (experimental)</li>
+<li>[Issue #31] Add new event when an element is added to dropdown</li>
+</ul>
+
+<p>jQuery Tokenize 2.3.2 - 28 April 2015</p>
+
+<ul>
+<li>Fix clear method</li>
+</ul>
+
+<p>jQuery Tokenize 2.3.1 - 24 April 2015</p>
+
+<ul>
+<li>[Issue #22] Add debounce options for Ajax queries</li>
+<li>[Issue #21] Add current tokenize object for all callback function with e parameter</li>
+</ul>
+
+<p>jQuery Tokenize 2.3 - 09 February 2015</p>
+
+<ul>
+<li>[Issue #15] Add enable and disable method for api</li>
+</ul>
+
+<p>jQuery Tokenize 2.2.2 - 29 December 2014</p>
+
+<ul>
+<li>[Issue #14] Fix adding tokens from Ajax when newElements is false</li>
+<li>[Issue #13] Add clear method</li>
+<li>Change search input background color to transparent</li>
+<li>Add placeholder and displayDropdownOnFocus options</li>
+<li>Remove maxlength option to the input if searchMaxLength is 0</li>
+</ul>
+
+<p>jQuery Tokenize 2.2.1 - 21 October 2014</p>
+
+<ul>
+<li>[Issue #3] Fix whitespace in code</li>
+</ul>
+
+<p>jQuery Tokenize 2.2 - 21 October 2014</p>
+
+<ul>
+<li>[Issue #1] Fix maxElements configuration was enforced across all objects in document</li>
+<li>[Issue #2] Fix the display of "x" for non UTF-8 websites</li>
+</ul>
+
+<p>jQuery Tokenize 2.1 - 7 August 2014</p>
+
+<ul>
+<li>Fix loading of multiple dom elements</li>
+<li>Add JSONP support</li>
+<li>Add options to personalize fields</li>
+<li>Add loop when move in drop down</li>
+<li>Remove validator option</li>
+</ul>
+
+<p>jQuery Tokenize 2.0 - 7 October 2013</p>
+
+<ul>
+<li>Add callbacks</li>
+<li>Add maxElements option</li>
+<li>Fix missing add token on click when only one element</li>
+<li>Fix box width - Use css instead</li>
+<li>Fix add default token execute onAddToken</li>
+</ul>
+
+<p>jQuery Tokenize 1.0 - 26 February 2013</p>
+
+<ul>
+<li>Fix backspace key to close the drop down</li>
+<li>Fix dropdown background</li>
+<li>Fix drop down item height when is less than options.size</li>
+<li>Fix click event out off the control</li>
+<li>Fix click on input when the last pending delete is deleted</li>
+</ul>
+
+<p>jQuery Tokenize beta-0.1 - 3 April 2012</p>
+
+<ul>
+<li>First version</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/zellerda/Tokenize">Tokenize</a> is maintained by <a href="https://github.com/zellerda">zellerda</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
